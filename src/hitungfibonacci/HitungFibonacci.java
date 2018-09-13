@@ -14,6 +14,7 @@ private static void tampilJudul(String identitas) {
     tampilJudul(identitas);
     int n = tampilInput();
     BigInteger hasil = fibo(n);
+    tampilHasil(n, hasil);
     }
     private static int tampilInput()
     {
@@ -39,4 +40,9 @@ private static void tampilJudul(String identitas) {
 }
 
 BigInteger hasil = fibo(n);
+private static void tampilHasil(int n, BigInteger hasil)
+{
+    System.out.println("Bilangan Fibonacci ke-" + n + " : " + hasil);
+
+}
 }
