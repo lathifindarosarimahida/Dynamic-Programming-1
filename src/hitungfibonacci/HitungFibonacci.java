@@ -12,5 +12,15 @@ private static void tampilJudul(String identitas) {
         String identitas = "Lathifinda Rosari Mahida / X RPL 2 / 19";
     
     tampilJudul(identitas);
+    int n = tampilInput();
     }
+    private static int tampilInput()
+    {
+        Scanner sacnner = new Scanner (System.in);
+       System.out.print("Bilangan ke-: ");
+       int n = sacnner.nextInt();
+       
+       return n;
+    }
+    int n = tampilInput();
 }
