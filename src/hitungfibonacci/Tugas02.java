@@ -27,9 +27,17 @@ public class Tugas02 {
         int jumlah = 0;
         for (int i = 0; i < Berat.length; i++)
         {
-            
+            int n = 0;
+            while(berat >= Berat[i])
+            {
+                berat = berat - Berat[i];
+                n++;
+            }
+            int total = n * Bayaran[i];
+            System.out.println(Berat[i] + "Sebanyak " + n + " dengan harga Rp." + total);
+            jumlah = jumlah + total;
         }
+        System.out.println("\nTotal Bayaran : Rp. " + jumlah);
     }
-}
     
-
+}
